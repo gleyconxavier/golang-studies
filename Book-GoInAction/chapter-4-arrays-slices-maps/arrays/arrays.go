@@ -4,7 +4,7 @@ import "fmt"
 
 // Return the concepts of the Chapter 4, about arrays.
 func Call() {
-	fmt.Println("Chapter 4 - Arrays")
+	fmt.Println("Arrays")
 
 	/*
 		Array declaration sintax with values:

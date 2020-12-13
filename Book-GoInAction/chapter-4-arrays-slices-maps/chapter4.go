@@ -1,14 +1,16 @@
-package main
+package chapter4
 
 import (
-	"github.com/golang-estudos/Book-GoInAction/chapter-4-arrays-slices-maps/arrays"
+	"fmt"
+
 	"github.com/golang-estudos/Book-GoInAction/chapter-4-arrays-slices-maps/maps"
 	"github.com/golang-estudos/Book-GoInAction/chapter-4-arrays-slices-maps/slices"
 )
 
-func main() {
+func Run() {
+	fmt.Println("Chapter4")
 
-	arrays.Call()
+	// arrays.Call()
 	slices.Call()
 	maps.Call()
 
