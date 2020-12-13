@@ -58,5 +58,48 @@ func Call() {
 	sliceOfSlice := slice5[1:3]
 	fmt.Println("Slice of slices:", sliceOfSlice)
 
+	// The slice of a slice, use the same subjacent array but see the array
+	// in a different way
+	slice5[1] = 11
+	fmt.Println("Slice of slices, share the same array from the original slice:",
+		sliceOfSlice)
+
+	// Incriasing a slice
+	slice6 := []int{10, 20, 30, 40, 50}
+	newSlice := slice6[1:3]
+	fmt.Println("Slice original:", slice6)
+	fmt.Println("Slice of slice original:", newSlice)
+	newSlice = append(newSlice, 60)
+	fmt.Println("Slice increased:", slice6)
+	fmt.Println("Slice of slice increased:", newSlice)
+
+	/*
+		When we append a to a newSlice, a value that goes beyond the original
+		slice capacity, the capacity is increased by 2x, that escale to the max
+		of 1.000 elements. Beyound that, from the 1.001 element, go increase the
+		capacity by x1.25, that can change as the language evolve
+	*/
+
+	// There's a third index we can use in a slice of slice, to limit
+	// it's capacity
+	source := []string{"Apple", "Orange", "Plum", "Banana", "Grape"}
+	slice = source[2:3:4]
+	// Formula to know size and capacity(3 - 2 = 1 size, 4 -2 = 2 capacity)
+	fmt.Println(slice, len(slice), cap(slice))
+
+	// Vantages of defining size and capazity with the same value
+	slice = source[2:3:3]
+	slice = append(slice, "kiwi")
+
+	/*
+		Without the limit of same size and capacity, the original subjacent
+		array would be changed "Banana" to "Kiwi", with that specification
+		only the slice of slice receive the new index.
+	*/
+	fmt.Println("Source slice:", source)
+	fmt.Println("Slice of slice:", slice)
+
+	// Slices can be pass through functions without worrying about memory
+
 	return
 }
