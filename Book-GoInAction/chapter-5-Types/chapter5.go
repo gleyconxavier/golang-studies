@@ -3,6 +3,7 @@ package chapter5
 import (
 	"fmt"
 
+	"github.com/golang-studies/Book-GoInAction/chapter-5-Types/interfaces"
 	"github.com/golang-studies/Book-GoInAction/chapter-5-Types/methods"
 	"github.com/golang-studies/Book-GoInAction/chapter-5-Types/structs"
 )
@@ -13,6 +14,7 @@ func Run() {
 
 	methods.Call()
 	structs.Call()
+	interfaces.Call()
 
 	return
 }

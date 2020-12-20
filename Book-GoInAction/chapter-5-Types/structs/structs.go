@@ -21,10 +21,11 @@ func (u user) notify() {
 		u.email)
 }
 
+// Call - Calls the structs content
 func Call() {
 	fmt.Println("Structs")
 
-	var bill user
+	bill := user{"Bill", "bill@gmail.com", 123, true}
 	bill.notify()
 
 	// When declaring a variable with zero values is preferable to use "var"
