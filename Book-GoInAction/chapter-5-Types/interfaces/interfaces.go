@@ -46,6 +46,10 @@ func Call() {
 	/*
 		The motive behind that is cause is not every time we can get
 		the value pointer, passing by value.
+
+		Notie that sendNotification is a polimorphic function, who receives
+		the values that implement the interface, aswell as value that can
+		implement the interface, offering this way a polymorphic behavior.
 	*/
 
 	return
