@@ -1,8 +1,8 @@
 package main
 
 import (
-	chapter4 "github.com/golang-estudos/Book-GoInAction/chapter-4-arrays-slices-maps"
-	chapter5 "github.com/golang-estudos/Book-GoInAction/chapter-5-Types"
+	chapter4 "github.com/golang-studies/Book-GoInAction/chapter-4-arrays-slices-maps"
+	chapter5 "github.com/golang-studies/Book-GoInAction/chapter-5-Types"
 )
 
 func main() {

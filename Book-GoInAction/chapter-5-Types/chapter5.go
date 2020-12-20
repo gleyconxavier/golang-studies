@@ -3,13 +3,16 @@ package chapter5
 import (
 	"fmt"
 
-	"github.com/golang-estudos/Book-GoInAction/chapter-5-Types/methods"
+	"github.com/golang-studies/Book-GoInAction/chapter-5-Types/methods"
+	"github.com/golang-studies/Book-GoInAction/chapter-5-Types/structs"
 )
 
+// Run - Run the calls on chapter 5
 func Run() {
 	fmt.Println("Chapter 5")
 
-	// structs.Call()
 	methods.Call()
+	structs.Call()
+
 	return
 }
