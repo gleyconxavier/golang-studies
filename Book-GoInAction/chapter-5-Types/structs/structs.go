@@ -15,11 +15,17 @@ type admin struct {
 	level  string
 }
 
+func (u user) notify() {
+	fmt.Printf("Sending user e-mail to %s<%s>\n",
+		u.name,
+		u.email)
+}
+
 func Call() {
 	fmt.Println("Structs")
 
 	var bill user
-	fmt.Println(bill)
+	bill.notify()
 
 	// When declaring a variable with zero values is preferable to use "var"
 	// when declaring a variable with values is preferable to use ":="
