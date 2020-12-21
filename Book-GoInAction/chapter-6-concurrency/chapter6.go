@@ -3,6 +3,7 @@ package chapter6
 import (
 	"fmt"
 
+	"github.com/golang-studies/Book-GoInAction/chapter-6-concurrency/channels"
 	"github.com/golang-studies/Book-GoInAction/chapter-6-concurrency/mutexes"
 )
 
@@ -16,6 +17,7 @@ func Run() {
 	// racecondition.Call()
 	// storedandloadint64.Call()
 	mutexes.Call()
+	channels.Call()
 
 	return
 }
