@@ -19,6 +19,7 @@ func Run() {
 	mutexes.Call()
 	channels.Call()
 	channels.CallChannels2()
+	channels.CallChannels3()
 
 	return
 }
