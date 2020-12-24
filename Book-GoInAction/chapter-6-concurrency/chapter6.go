@@ -18,6 +18,7 @@ func Run() {
 	// storedandloadint64.Call()
 	mutexes.Call()
 	channels.Call()
+	channels.CallChannels2()
 
 	return
 }
