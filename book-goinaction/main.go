@@ -1,6 +1,6 @@
 package main
 
-import chapter6 "github.com/golang-studies/Book-GoInAction/chapter-6-concurrency"
+import chapter6 "github.com/golang-studies/book-goinaction/chapter-6-concurrency"
 
 func main() {
 
